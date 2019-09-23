@@ -1,9 +1,39 @@
 let friends = [
   {
     "name": "",
-    "age": "",
-    
-  }
+    "photo": "",
+    "scores": [
+
+    ]
+  },
+  {
+    "name": "",
+    "photo": "",
+    "scores": [
+
+    ]
+  },
+  {
+    "name": "",
+    "photo": "",
+    "scores": [
+
+    ]
+  },
+  {
+    "name": "",
+    "photo": "",
+    "scores": [
+
+    ]
+  },
+  {
+    "name": "",
+    "photo": "",
+    "scores": [
+
+    ]
+  },
 ];
 
 module.exports = friends;

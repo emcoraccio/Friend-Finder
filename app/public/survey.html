@@ -1,12 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Survey - Friend Finder</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
+
 <body>
-  <h1>Friend Finder Survey</h1>
+  <div class="container">
+
+    <h1>Friend Finder Survey</h1>
+
+    <form action="#">
+
+      <br />
+      <p>QUESTION 1</p>
+      <label>
+        <input id="sAgree" name="question1" type="radio" value="1" required />
+        <span>Strongly Agree</span>
+      </label>
+
+      <label>
+        <!-- Agree<br /> -->
+        <input id="agree" name="question1" type="radio" value="2" required />
+        <span>Agree</span>
+      </label>
+
+      <label>
+        <!-- Neutral<br /> -->
+        <input id="neutral" name="question1" type="radio" value="3" required />
+        <span>Neutral</span>
+      </label>
+
+      <label>
+        <!-- Disagree <br /> -->
+        <input id="disagree" name="question1" type="radio" value="4" required />
+        <span>Disagree</span>
+      </label>
+
+      <label>
+        <!-- Strongly Disagree <br /> -->
+        <input id="sDisagree" name="question1" type="radio" value="5" required />
+        <span>Strongly Disagree</span>
+      </label>
+
+
+      <br />
+      <p>QUESTION 2</p>
+      <label>
+        <!-- Strongly Agree<br /> -->
+        <input id="sAgree" name="question2" type="radio" value="1" />
+        <span>Strongly Agree</span>
+      </label>
+
+      <label>
+        <!-- Agree<br /> -->
+        <input id="agree" name="question2" type="radio" value="2" />
+        <span>Agree</span>
+      </label>
+
+      <label>
+        <!-- Neutral<br /> -->
+        <input id="neutral" class="" name="question2" type="radio" value="3" />
+        <span>Neutral</span>
+      </label>
+
+      <label>
+        <!-- Disagree <br /> -->
+        <input id="disagree" name="question2" type="radio" value="4" />
+        <span>Disagree</span>
+      </label>
+
+      <label>
+        <!-- Strongly Disagree <br /> -->
+        <input id="sDisagree" name="question2" type="radio" value="5" />
+        <span>Strongly Disagree</span>
+      </label>
+
+
+      <br />
+      <p>QUESTION 3</p>
+      <label>
+        <!-- Strongly Agree<br /> -->
+        <input id="sAgree" name="question3" type="radio" value="1" />
+        <span>Strongly Agree</span>
+      </label>
+
+      <label>
+        <!-- 
+        <!-- Agree<br /> -->
+        <input id="agree" name="question3" type="radio" value="2" />
+        <span>Agree</span>
+      </label>
+
+      <label>
+        <!-- 
+        <!-- Neutral<br /> -->
+        <input id="neutral" class="" name="question3" type="radio" value="3" />
+        <span>Neutral</span>
+      </label>
+
+      <label>
+        <!-- 
+        <!-- Disagree <br /> -->
+        <input id="disagree" name="question3" type="radio" value="4" />
+        <span>Disagree</span>
+      </label>
+
+      <label>
+        <!-- 
+        <!-- Strongly Disagree <br /> -->
+        <input id="sDisagree" name="question3" type="radio" value="5" />
+        <span>Strongly Disagree</span>
+      </label>
+
+
+      <br />
+      <p>QUESTION 4</p>
+      <label>
+        <!-- Strongly Agree<br /> -->
+        <input id="sAgree" name="question4" type="radio" value="1" />
+        <span>Strongly Agree</span>
+      </label>
+
+      <label>
+        <!-- Agree<br /> -->
+        <input id="agree" name="question4" type="radio" value="2" />
+        <span>Agree</span>
+      </label>
+
+      <label>
+        <!-- Neutral<br /> -->
+        <input id="neutral" name="question4" type="radio" value="3" />
+        <span>Neutral</span>
+      </label>
+
+      <label>
+        <!-- Disagree <br /> -->
+        <input id="disagree" name="question4" type="radio" value="4" />
+        <span>Disagree</span>
+      </label>
+
+      <label>
+        <!-- Strongly Disagree <br /> -->
+        <input id="sDisagree" name="question4" type="radio" value="5" />
+        <span>Strongly Disagree</span>
+      </label>
+
+
+      <br />
+      <p>QUESTION 5</p>
+      <label>
+        <!-- Strongly Agree<br /> -->
+        <input id="sAgree" name="question5" type="radio" value="1" />
+        <span>Strongly Agree</span>
+      </label>
+
+      <label>
+        <!-- Agree<br /> -->
+        <input id="agree" name="question5" type="radio" value="2" />
+        <span>Agree</span>
+      </label>
+
+      <label>
+        <!-- Neutral<br /> -->
+        <input id="neutral" name="question5" type="radio" value="3" />
+        <span>Neutral</span>
+      </label>
+
+      <label>
+        <!-- Disagree <br /> -->
+        <input id="disagree" name="question5" type="radio" value="4" />
+        <span>Disagree</span>
+      </label>
+
+      <label>
+        <!-- Strongly Disagree <br /> -->
+        <input id="sDisagree" name="question5" type="radio" value="5" />
+        <span>Strongly Disagree</span>
+      </label>
+      <br />
+      <p>QUESTION 6</p>
+      <label>
+        <!-- Strongly Agree<br /> -->
+        <input id="sAgree" name="question6" type="radio" value="1" />
+        <span>Strongly Agree</span>
+      </label>
+
+      <label>
+        <!-- Agree<br /> -->
+        <input id="agree" name="question6" type="radio" value="2" />
+        <span>Agree</span>
+      </label>
+
+      <label>
+        <!-- Neutral<br /> -->
+        <input id="neutral" name="question6" type="radio" value="3" />
+        <span>Neutral</span>
+      </label>
+
+      <label>
+        <!-- Disagree <br /> -->
+        <input id="disagree" name="question6" type="radio" value="4" />
+        <span>Disagree</span>
+      </label>
+
+      <label>
+        <!-- Strongly Disagree <br /> -->
+        <input id="sDisagree" name="question6" type="radio" value="5" />
+        <span>Strongly Disagree</span>
+      </label>
+
+
+      <br />
+      <p>QUESTION 7</p>
+      <label>
+        <!-- Strongly Agree<br /> -->
+        <input id="sAgree" name="question7" type="radio" value="1" />
+        <span>Strongly Agree</span>
+      </label>
+
+      <label>
+        <!-- Agree<br /> -->
+        <input id="agree" name="question7" type="radio" value="2" />
+        <span>Agree</span>
+      </label>
+
+      <label>
+        <!-- Neutral<br /> -->
+        <input id="neutral" name="question7" type="radio" value="3" />
+        <span>Neutral</span>
+      </label>
+
+      <label>
+        <!-- Disagree <br /> -->
+        <input id="disagree" name="question7" type="radio" value="4" />
+        <span>Disagree</span>
+      </label>
+
+      <label>
+        <!-- Strongly Disagree <br /> -->
+        <input id="sDisagree" name="question7" type="radio" value="5" />
+        <span>Strongly Disagree</span>
+      </label>
+
+
+      <br />
+      <p>QUESTION 8</p>
+      <label>
+        <!-- Strongly Agree<br /> -->
+        <input id="sAgree" name="question8" type="radio" value="1" />
+        <span>Strongly Agree</span>
+      </label>
+
+      <label>
+        <!-- Agree<br /> -->
+        <input id="agree" name="question8" type="radio" value="2" />
+        <span>Agree</span>
+      </label>
+
+      <label>
+        <!-- Neutral<br /> -->
+        <input id="neutral" name="question8" type="radio" value="3" />
+        <span>Neutral</span>
+      </label>
+
+      <label>
+        <!-- Disagree <br /> -->
+        <input id="disagree" name="question8" type="radio" value="4" />
+        <span>Disagree</span>
+      </label>
+
+      <label>
+        <!-- Strongly Disagree <br /> -->
+        <input id="sDisagree" name="question8" type="radio" value="5" />
+        <span>Strongly Disagree</span>
+      </label>
+
+
+      <br />
+      <p>QUESTION 9</p>
+      <label>
+        <!-- Strongly Agree<br /> -->
+        <input id="sAgree" name="question9" type="radio" value="1" />
+        <span>Strongly Agree</span>
+      </label>
+
+      <label>
+        <!-- Agree<br /> -->
+        <input id="agree" name="question9" type="radio" value="2" />
+        <span>Agree</span>
+      </label>
+
+      <label>
+        <!-- Neutral<br /> -->
+        <input id="neutral" name="question9" type="radio" value="3" />
+        <span>Neutral</span>
+      </label>
+
+      <label>
+        <!-- Disagree <br /> -->
+        <input id="disagree" name="question9" type="radio" value="4" />
+        <span>Disagree</span>
+      </label>
+
+      <label>
+        <!-- Strongly Disagree <br /> -->
+        <input id="sDisagree" name="question9" type="radio" value="5" />
+        <span>Strongly Disagree</span>
+      </label>
+
+
+      <br />
+      <p>QUESTION 10</p>
+      <label>
+        <!-- Strongly Agree<br /> -->
+        <input id="sAgree" name="question10" type="radio" value="1" />
+        <span>Strongly Agree</span>
+      </label>
+
+      <label>
+        <!-- Agree<br /> -->
+        <input id="agree" name="question10" type="radio" value="2" />
+        <span>Agree</span>
+      </label>
+
+      <label>
+        <!-- Neutral<br /> -->
+        <input id="neutral" name="question10" type="radio" value="3" />
+        <span>Neutral</span>
+      </label>
+
+      <label>
+        <!-- Disagree <br /> -->
+        <input id="disagree" name="question10" type="radio" value="4" />
+        <span>Disagree</span>
+      </label>
+
+      <label>
+        <!-- Strongly Disagree <br /> -->
+        <input id="sDisagree" name="question10" type="radio" value="5" />
+        <span>Strongly Disagree</span>
+      </label>
+
+      <br />
+      <button class="submit btn waves-effect waves-light" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+      </button>
+
+    </form>
+
+  </div>
+
+
+  <script src="./javascript/app.js"></script>
 </body>
+
 </html>

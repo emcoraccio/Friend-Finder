@@ -1,38 +1,28 @@
 let friends = [
   {
-    "name": "",
+    "name": "0th",
     "photo": "",
-    "scores": [
-
-    ]
+    "scores": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
   },
   {
-    "name": "",
+    "name": "1st",
     "photo": "",
-    "scores": [
-
-    ]
+    "scores": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
   },
   {
-    "name": "",
+    "name": "2nd",
     "photo": "",
-    "scores": [
-
-    ]
+    "scores": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
   },
   {
-    "name": "",
+    "name": "3rd",
     "photo": "",
-    "scores": [
-
-    ]
+    "scores": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
   },
   {
-    "name": "",
+    "name": "4th",
     "photo": "",
-    "scores": [
-
-    ]
+    "scores": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
   },
 ];
 

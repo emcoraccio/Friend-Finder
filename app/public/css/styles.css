@@ -1,9 +1,83 @@
-label span {
-  /* float: left; */
-  padding: 0 1em;
-  /* text-align: center; */
+/* GENERAL STYLING */
+body {
+  font-family: 'Poiret One', cursive;
+  background: #F5F6F9;
+}
+
+body#home-page {
+  background: url("/images/mountain-feet.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+p, span {
+  font-size: 20px;
+}
+
+.btn, .btn-large, .btn-small {
+  background-color: #072b42;
+}
+.btn:hover, .btn-large:hover, .btn-small:hover {
+  background-color: #2c5b79
+}
+
+/* HOME PAGE STYLING */
+.home {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+h1.page-title {
+  margin-top: 2em;
+}
+
+p.home {
+ margin: 1.5em;
+ font-size: 2em;
+}
+
+button#goToSurvey{
+  margin: auto;
+}
+
+/* SURVEY PAGE STYLING */
+p#modal-name, p.question {
+  font-weight: 600;
+}
+
+p.question {
+  margin-top: 2em;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+  background-color: #072b42;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+  border: #2c5b79 2px solid;
+}
+
+/* label underline color */
+.input-field input[type=text] {
+  border-bottom: 1px solid #072b42;
+}
+
+/* label underline focus color */
+div.input-field input#pic:focus, input#first_name:focus {
+
+  border-bottom: 1px solid #072b42;
+  box-shadow: 0 1px 0 0 #072b42;
+
+}
+
+i#name_icon, i#pic_icon {
+  color: #072b42;
 }
 
 button.submit {
   margin: 30px 0px;
+}
+
+/* MODAL STYLING */
+img#modal-pic {
+  max-width: 400px;
 }

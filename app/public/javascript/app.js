@@ -1,11 +1,11 @@
 $(document).ready(() => {
 
-  let testArray = [2, 1, 2, 5, 4, 2, 2, 1, 1, 4];
+  $('.modal').modal();
   let matches = [];
   let userAnswers = [];
 
 
-  let calcDifference = (arr1, arr2) => {
+  const calcDifference = (arr1, arr2) => {
 
     let total = 0;
 
@@ -19,55 +19,86 @@ $(document).ready(() => {
 
   };
 
-  let findMatch = (array) => {
+  const findMatch = (array) => {
+    //returns the max value in an array
+    return array.reduce((a, b) => Math.max(a, b));
 
-    let max = array.reduce(function (a, b) {
-      return Math.max(a, b);
-    });
-
-    return max
   }
 
-  let getFriends = (userScores) => {
+  const getFriends = (userScores) => {
 
     $.get("/api/friends", function (data) {
 
       data.forEach(element => {
         matches.push(calcDifference(element.scores, userScores));
-        console.log(matches)
       });
-
-      console.log(`You have a ${findMatch(matches)}% compatability with`)
       let bestMatch = matches.indexOf(findMatch(matches));
-      console.log(data[bestMatch])
+
+      $("h4#modal-header").text("FRIEND FOUND!")
+      $("p#modal-percent").text(`You have a ${findMatch(matches)}% compatability with`)
+      // ({name, photo}) = data[bestMatch];
+      let name = data[bestMatch].name;
+      let photo = data[bestMatch].photo;
+
+      console.log(name, photo)
+
+      $("p#modal-name").text(`${name}`);
+      $("img#modal-pic").attr("src", photo)
+
+      matches = []
+
     });
-
-
 
   };
 
+  const postFriend = (friend) => {
+
+    $.post("/api/friends", friend, function (friend, status) {
+
+      console.log("sent new friend data")
+      console.log(`Status: ${status}`)
+
+    })
+
+  }
 
   $("button.submit").on("click", function (event) {
     event.preventDefault();
 
     userAnswers = [];
 
-    userAnswers.push($('input[name=question1]:checked').val(), $('input[name=question2]:checked').val(),
-      $('input[name=question3]:checked').val(), $('input[name=question4]:checked').val(), $('input[name=question5]:checked').val(),
-      $('input[name=question6]:checked').val(), $('input[name=question7]:checked').val(), $('input[name=question8]:checked').val(),
-      $('input[name=question9]:checked').val(), $('input[name=question10]:checked').val());
+    userAnswers.push(
+      $('input[name=question1]:checked').val(),
+      $('input[name=question2]:checked').val(),
+      $('input[name=question3]:checked').val(),
+      $('input[name=question4]:checked').val(),
+      $('input[name=question5]:checked').val(),
+      $('input[name=question6]:checked').val(),
+      $('input[name=question7]:checked').val(),
+      $('input[name=question8]:checked').val(),
+      $('input[name=question9]:checked').val(),
+      $('input[name=question10]:checked').val());
 
     if (userAnswers.indexOf(undefined) === -1) {
 
       getFriends(userAnswers);
 
+      let newFriend = {
+        name: $("input#first_name").val().trim(),
+        photo: $("input#pic").val().trim(),
+        scores: userAnswers
+      };
+
+      postFriend(newFriend);
+
     }
     else {
 
+      $("h4#modal-header").text("No match found");
+      $("p#modal-percent").text("Please answer all of the questions")
       console.log("Please answer all of the questions");
 
     }
-
 
   });
 

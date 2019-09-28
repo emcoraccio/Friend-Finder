@@ -6,15 +6,15 @@ module.exports = (app) => {
   
   app.get("/api/friends", (req, res) => {
   
-    res.json(friendsData)
+    res.json(friendsData);
   
   });
   
   
   app.post("/api/friends", (req, res) => {
   
-    let newFriend = req.body
-  
+    friendsData.push(req.body);
+    res.json(true);
   
   });
 

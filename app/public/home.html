@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,30 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
-<body>
-  
-  <h1>Friend Finder Home Page</h1>
+
+<body id="home-page">
+
+  <div class="container">
+    <h1 class="center home page-title">Friend Finder</h1>
+
+    <div class="row">
+      <p class="col s12 home center">Take our simple 10 question survey to find a friend</p>
+
+      <div class="col s6 offset-s3 center">
+        <a href="./survey.html">
+          <button id="goToSurvey" class="btn">Take Survey</button>
+        </a>
+      </div>
+
+    </div>
+  </div>
 
 
   <script src="./javascript/app.js"></script>
 </body>
+
 </html>

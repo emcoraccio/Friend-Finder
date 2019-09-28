@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -18,350 +19,353 @@
 <body>
   <div class="container">
 
-    <h1>Friend Finder Survey</h1>
+    <h1>Give us some info about you</h1>
 
     <form action="#">
+      <div class="row">
 
-      <br />
-      <p>QUESTION 1</p>
-      <label>
-        <input id="sAgree" name="question1" type="radio" value="1" required />
-        <span>Strongly Agree</span>
-      </label>
+        <div class="input-field col s6">
+          <i id="name_icon" class="material-icons prefix">account_circle</i>
+          <input placeholder="Name" id="first_name" type="text" class="validate">
+          <label for="first_name"></label>
+        </div>
 
-      <label>
-        <!-- Agree<br /> -->
-        <input id="agree" name="question1" type="radio" value="2" required />
-        <span>Agree</span>
-      </label>
+        <div class="input-field col s6">
+          <i id="pic_icon" class="material-icons prefix">add_a_photo</i>
+          <input placeholder="Link to a Pic" id="pic" type="text" class="validate">
+          <label for="pic"></label>
+        </div>
 
-      <label>
-        <!-- Neutral<br /> -->
-        <input id="neutral" name="question1" type="radio" value="3" required />
-        <span>Neutral</span>
-      </label>
+      </div>
 
-      <label>
-        <!-- Disagree <br /> -->
-        <input id="disagree" name="question1" type="radio" value="4" required />
-        <span>Disagree</span>
-      </label>
+      <div class="row">
 
-      <label>
-        <!-- Strongly Disagree <br /> -->
-        <input id="sDisagree" name="question1" type="radio" value="5" required />
-        <span>Strongly Disagree</span>
-      </label>
+        <p class="col s12 left-align question">1. After a long day, you like to relax by doing something quiet at home</p>
+        <label class="col s12 l2 left-align">
+          <input name="question1" type="radio" value="1" required />
+          <span>Strongly Agree</span>
+        </label>
 
+        <label class="col s12 l2 left-align">
+          <input name="question1" type="radio" value="2" required />
+          <span>Agree</span>
+        </label>
 
-      <br />
-      <p>QUESTION 2</p>
-      <label>
-        <!-- Strongly Agree<br /> -->
-        <input id="sAgree" name="question2" type="radio" value="1" />
-        <span>Strongly Agree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question1" type="radio" value="3" required />
+          <span>Neutral</span>
+        </label>
 
-      <label>
-        <!-- Agree<br /> -->
-        <input id="agree" name="question2" type="radio" value="2" />
-        <span>Agree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question1" type="radio" value="4" required />
+          <span>Disagree</span>
+        </label>
 
-      <label>
-        <!-- Neutral<br /> -->
-        <input id="neutral" class="" name="question2" type="radio" value="3" />
-        <span>Neutral</span>
-      </label>
+        <label class="col s12 l3 left-align">
+          <input name="question1" type="radio" value="5" required />
+          <span>Strongly Disagree</span>
+        </label>
 
-      <label>
-        <!-- Disagree <br /> -->
-        <input id="disagree" name="question2" type="radio" value="4" />
-        <span>Disagree</span>
-      </label>
-
-      <label>
-        <!-- Strongly Disagree <br /> -->
-        <input id="sDisagree" name="question2" type="radio" value="5" />
-        <span>Strongly Disagree</span>
-      </label>
+      </div>
 
 
-      <br />
-      <p>QUESTION 3</p>
-      <label>
-        <!-- Strongly Agree<br /> -->
-        <input id="sAgree" name="question3" type="radio" value="1" />
-        <span>Strongly Agree</span>
-      </label>
+      <div class="row">
 
-      <label>
-        <!-- 
-        <!-- Agree<br /> -->
-        <input id="agree" name="question3" type="radio" value="2" />
-        <span>Agree</span>
-      </label>
+        <p class="col s12 left-align question">2. Music is a huge part of your day</p>
+        <label class="col s12 l2 left-align">
+          <input name="question2" type="radio" value="1" />
+          <span>Strongly Agree</span>
+        </label>
 
-      <label>
-        <!-- 
-        <!-- Neutral<br /> -->
-        <input id="neutral" class="" name="question3" type="radio" value="3" />
-        <span>Neutral</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question2" type="radio" value="2" />
+          <span>Agree</span>
+        </label>
 
-      <label>
-        <!-- 
-        <!-- Disagree <br /> -->
-        <input id="disagree" name="question3" type="radio" value="4" />
-        <span>Disagree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input class="" name="question2" type="radio" value="3" />
+          <span>Neutral</span>
+        </label>
 
-      <label>
-        <!-- 
-        <!-- Strongly Disagree <br /> -->
-        <input id="sDisagree" name="question3" type="radio" value="5" />
-        <span>Strongly Disagree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question2" type="radio" value="4" />
+          <span>Disagree</span>
+        </label>
+
+        <label class="col s12 l3 left-align">
+          <input name="question2" type="radio" value="5" />
+          <span>Strongly Disagree</span>
+        </label>
+
+      </div>
 
 
-      <br />
-      <p>QUESTION 4</p>
-      <label>
-        <!-- Strongly Agree<br /> -->
-        <input id="sAgree" name="question4" type="radio" value="1" />
-        <span>Strongly Agree</span>
-      </label>
 
-      <label>
-        <!-- Agree<br /> -->
-        <input id="agree" name="question4" type="radio" value="2" />
-        <span>Agree</span>
-      </label>
+      <div class="row">
 
-      <label>
-        <!-- Neutral<br /> -->
-        <input id="neutral" name="question4" type="radio" value="3" />
-        <span>Neutral</span>
-      </label>
+        <p class="col s12 left-align question">3. You love spending time outside being active</p>
+        <label class="col s12 l2 left-align">
+          <input name="question3" type="radio" value="1" />
+          <span>Strongly Agree</span>
+        </label>
 
-      <label>
-        <!-- Disagree <br /> -->
-        <input id="disagree" name="question4" type="radio" value="4" />
-        <span>Disagree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question3" type="radio" value="2" />
+          <span>Agree</span>
+        </label>
 
-      <label>
-        <!-- Strongly Disagree <br /> -->
-        <input id="sDisagree" name="question4" type="radio" value="5" />
-        <span>Strongly Disagree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input class="" name="question3" type="radio" value="3" />
+          <span>Neutral</span>
+        </label>
 
+        <label class="col s12 l2 left-align">
+          <input name="question3" type="radio" value="4" />
+          <span>Disagree</span>
+        </label>
 
-      <br />
-      <p>QUESTION 5</p>
-      <label>
-        <!-- Strongly Agree<br /> -->
-        <input id="sAgree" name="question5" type="radio" value="1" />
-        <span>Strongly Agree</span>
-      </label>
+        <label class="col s12 l3 left-align">
+          <input name="question3" type="radio" value="5" />
+          <span>Strongly Disagree</span>
+        </label>
 
-      <label>
-        <!-- Agree<br /> -->
-        <input id="agree" name="question5" type="radio" value="2" />
-        <span>Agree</span>
-      </label>
+      </div>
 
-      <label>
-        <!-- Neutral<br /> -->
-        <input id="neutral" name="question5" type="radio" value="3" />
-        <span>Neutral</span>
-      </label>
+      <div class="row">
 
-      <label>
-        <!-- Disagree <br /> -->
-        <input id="disagree" name="question5" type="radio" value="4" />
-        <span>Disagree</span>
-      </label>
+        <p class="col s12 left-align question">4. You prefer to be on the side rather than in the spotlight</p>
+        <label class="col s12 l2 left-align">
+          <input name="question4" type="radio" value="1" />
+          <span>Strongly Agree</span>
+        </label>
 
-      <label>
-        <!-- Strongly Disagree <br /> -->
-        <input id="sDisagree" name="question5" type="radio" value="5" />
-        <span>Strongly Disagree</span>
-      </label>
-      <br />
-      <p>QUESTION 6</p>
-      <label>
-        <!-- Strongly Agree<br /> -->
-        <input id="sAgree" name="question6" type="radio" value="1" />
-        <span>Strongly Agree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question4" type="radio" value="2" />
+          <span>Agree</span>
+        </label>
 
-      <label>
-        <!-- Agree<br /> -->
-        <input id="agree" name="question6" type="radio" value="2" />
-        <span>Agree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question4" type="radio" value="3" />
+          <span>Neutral</span>
+        </label>
 
-      <label>
-        <!-- Neutral<br /> -->
-        <input id="neutral" name="question6" type="radio" value="3" />
-        <span>Neutral</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question4" type="radio" value="4" />
+          <span>Disagree</span>
+        </label>
 
-      <label>
-        <!-- Disagree <br /> -->
-        <input id="disagree" name="question6" type="radio" value="4" />
-        <span>Disagree</span>
-      </label>
+        <label class="col s12 l3 left-align">
+          <input name="question4" type="radio" value="5" />
+          <span>Strongly Disagree</span>
+        </label>
 
-      <label>
-        <!-- Strongly Disagree <br /> -->
-        <input id="sDisagree" name="question6" type="radio" value="5" />
-        <span>Strongly Disagree</span>
-      </label>
+      </div>
 
 
-      <br />
-      <p>QUESTION 7</p>
-      <label>
-        <!-- Strongly Agree<br /> -->
-        <input id="sAgree" name="question7" type="radio" value="1" />
-        <span>Strongly Agree</span>
-      </label>
+      <div class="row">
 
-      <label>
-        <!-- Agree<br /> -->
-        <input id="agree" name="question7" type="radio" value="2" />
-        <span>Agree</span>
-      </label>
+        <p class="col s12 left-align question">5. You prefer to always be doing something</p>
+        <label class="col s12 l2 left-align">
+          <input name="question5" type="radio" value="1" />
+          <span>Strongly Agree</span>
+        </label>
 
-      <label>
-        <!-- Neutral<br /> -->
-        <input id="neutral" name="question7" type="radio" value="3" />
-        <span>Neutral</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question5" type="radio" value="2" />
+          <span>Agree</span>
+        </label>
 
-      <label>
-        <!-- Disagree <br /> -->
-        <input id="disagree" name="question7" type="radio" value="4" />
-        <span>Disagree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question5" type="radio" value="3" />
+          <span>Neutral</span>
+        </label>
 
-      <label>
-        <!-- Strongly Disagree <br /> -->
-        <input id="sDisagree" name="question7" type="radio" value="5" />
-        <span>Strongly Disagree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question5" type="radio" value="4" />
+          <span>Disagree</span>
+        </label>
 
+        <label class="col s12 l3 left-align">
+          <input name="question5" type="radio" value="5" />
+          <span>Strongly Disagree</span>
+        </label>
 
-      <br />
-      <p>QUESTION 8</p>
-      <label>
-        <!-- Strongly Agree<br /> -->
-        <input id="sAgree" name="question8" type="radio" value="1" />
-        <span>Strongly Agree</span>
-      </label>
+      </div>
 
-      <label>
-        <!-- Agree<br /> -->
-        <input id="agree" name="question8" type="radio" value="2" />
-        <span>Agree</span>
-      </label>
+      <div class="row">
 
-      <label>
-        <!-- Neutral<br /> -->
-        <input id="neutral" name="question8" type="radio" value="3" />
-        <span>Neutral</span>
-      </label>
+        <p class="col s12 left-align question">6. You would prefer spending the day kayaking on a lake over spending it exploring a new city</p>
+        <label class="col s12 l2 left-align">
+          <input name="question6" type="radio" value="1" />
+          <span>Strongly Agree</span>
+        </label>
 
-      <label>
-        <!-- Disagree <br /> -->
-        <input id="disagree" name="question8" type="radio" value="4" />
-        <span>Disagree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question6" type="radio" value="2" />
+          <span>Agree</span>
+        </label>
 
-      <label>
-        <!-- Strongly Disagree <br /> -->
-        <input id="sDisagree" name="question8" type="radio" value="5" />
-        <span>Strongly Disagree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question6" type="radio" value="3" />
+          <span>Neutral</span>
+        </label>
+
+        <label class="col s12 l2 left-align">
+          <input name="question6" type="radio" value="4" />
+          <span>Disagree</span>
+        </label>
+
+        <label class="col s12 l3 left-align">
+          <input name="question6" type="radio" value="5" />
+          <span>Strongly Disagree</span>
+        </label>
+
+      </div>
 
 
-      <br />
-      <p>QUESTION 9</p>
-      <label>
-        <!-- Strongly Agree<br /> -->
-        <input id="sAgree" name="question9" type="radio" value="1" />
-        <span>Strongly Agree</span>
-      </label>
+      <div class="row">
 
-      <label>
-        <!-- Agree<br /> -->
-        <input id="agree" name="question9" type="radio" value="2" />
-        <span>Agree</span>
-      </label>
+        <p class="col s12 left-align question">7. You prefer sweet over salty</p>
+        <label class="col s12 l2 left-align">
+          <input name="question7" type="radio" value="1" />
+          <span>Strongly Agree</span>
+        </label>
 
-      <label>
-        <!-- Neutral<br /> -->
-        <input id="neutral" name="question9" type="radio" value="3" />
-        <span>Neutral</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question7" type="radio" value="2" />
+          <span>Agree</span>
+        </label>
 
-      <label>
-        <!-- Disagree <br /> -->
-        <input id="disagree" name="question9" type="radio" value="4" />
-        <span>Disagree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question7" type="radio" value="3" />
+          <span>Neutral</span>
+        </label>
 
-      <label>
-        <!-- Strongly Disagree <br /> -->
-        <input id="sDisagree" name="question9" type="radio" value="5" />
-        <span>Strongly Disagree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question7" type="radio" value="4" />
+          <span>Disagree</span>
+        </label>
+
+        <label class="col s12 l3 left-align">
+          <input name="question7" type="radio" value="5" />
+          <span>Strongly Disagree</span>
+        </label>
+
+      </div>
 
 
-      <br />
-      <p>QUESTION 10</p>
-      <label>
-        <!-- Strongly Agree<br /> -->
-        <input id="sAgree" name="question10" type="radio" value="1" />
-        <span>Strongly Agree</span>
-      </label>
+      <div class="row">
 
-      <label>
-        <!-- Agree<br /> -->
-        <input id="agree" name="question10" type="radio" value="2" />
-        <span>Agree</span>
-      </label>
+        <p class="col s12 left-align question">8. Dogs are better than cats</p>
+        <label class="col s12 l2 left-align">
+          <input name="question8" type="radio" value="1" />
+          <span>Strongly Agree</span>
+        </label>
 
-      <label>
-        <!-- Neutral<br /> -->
-        <input id="neutral" name="question10" type="radio" value="3" />
-        <span>Neutral</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question8" type="radio" value="2" />
+          <span>Agree</span>
+        </label>
 
-      <label>
-        <!-- Disagree <br /> -->
-        <input id="disagree" name="question10" type="radio" value="4" />
-        <span>Disagree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question8" type="radio" value="3" />
+          <span>Neutral</span>
+        </label>
 
-      <label>
-        <!-- Strongly Disagree <br /> -->
-        <input id="sDisagree" name="question10" type="radio" value="5" />
-        <span>Strongly Disagree</span>
-      </label>
+        <label class="col s12 l2 left-align">
+          <input name="question8" type="radio" value="4" />
+          <span>Disagree</span>
+        </label>
 
-      <br />
-      <button class="submit btn waves-effect waves-light" type="submit" name="action">Submit
+        <label class="col s12 l3 left-align">
+          <input name="question8" type="radio" value="5" />
+          <span>Strongly Disagree</span>
+        </label>
+
+      </div>
+
+
+      <div class="row">
+
+        <p class="col s12 left-align question">9. You would rather live by the beach than in the mountains</p>
+        <label class="col s12 l2 left-align">
+          <input name="question9" type="radio" value="1" />
+          <span>Strongly Agree</span>
+        </label>
+
+        <label class="col s12 l2 left-align">
+          <input name="question9" type="radio" value="2" />
+          <span>Agree</span>
+        </label>
+
+        <label class="col s12 l2 left-align">
+          <input name="question9" type="radio" value="3" />
+          <span>Neutral</span>
+        </label>
+
+        <label class="col s12 l2 left-align">
+          <input name="question9" type="radio" value="4" />
+          <span>Disagree</span>
+        </label>
+
+        <label class="col s12 l3 left-align">
+          <input name="question9" type="radio" value="5" />
+          <span>Strongly Disagree</span>
+        </label>
+
+      </div>
+
+
+      <div class="row">
+
+        <p class="col s12 left-align question">10. You love to travel</p>
+        <label class="col s12 l2 left-align">
+          <input name="question10" type="radio" value="1" />
+          <span>Strongly Agree</span>
+        </label>
+
+        <label class="col s12 l2 left-align">
+          <input name="question10" type="radio" value="2" />
+          <span>Agree</span>
+        </label>
+
+        <label class="col s12 l2 left-align">
+          <input name="question10" type="radio" value="3" />
+          <span>Neutral</span>
+        </label>
+
+        <label class="col s12 l2 left-align">
+          <input name="question10" type="radio" value="4" />
+          <span>Disagree</span>
+        </label>
+
+        <label class="col s12 l3 left-align">
+          <input name="question10" type="radio" value="5" />
+          <span>Strongly Disagree</span>
+        </label>
+
+      </div>
+
+      <button class="submit btn waves-effect waves-light modal-trigger" data-target="modal1" type="button" name="action">Submit
         <i class="material-icons right">send</i>
       </button>
 
     </form>
 
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4 id="modal-header"></h4>
+        <p id="modal-percent"></p>
+        <p id="modal-name"></p>
+        <div class="row">
+          <img id="modal-pic" class="col">
+        </div>
+      </div>
+    </div>
+
   </div>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./javascript/app.js"></script>
 </body>
 
